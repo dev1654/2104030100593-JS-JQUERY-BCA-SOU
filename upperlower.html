@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>up</title>
+</head>
+<body>
+    <h1>Convert into Uppercase And Lowercase</h1>
+    <h2>Name:</h2><input type="text" id="u" onchange="uppercase()" placeholder="Enter Name">
+    <h2>id:</h2><input type="text" id="l" onchange="lowercase()" placeholder="Enter ID">
+    <script>
+        function uppercase(){
+        const x= document.getElementById("u");
+        x.value = x.value.toUpperCase();
+    }
+    function lowercase(){
+        const y= document.getElementById("l");
+        y.value = y.value.toLowerCase();
+    }
+    </script>
+</body>
+</html>
