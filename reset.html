@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reset</title>
+</head>
+<body>
+    <form onreset="reset()" id="form">
+      First Name : <input type="text" placeholder="Enter First Name"><br><br>
+      Last Name : <input type="text" placeholder="Enter Last Name"><br><br>
+      Contact No : <input type="number" placeholder="Enter Contact No"><br><br>
+      Email : <input type="email" placeholder="Enter Email Id"><br><br>
+    </form>
+    <input type="button" id="resetbutton" value="Reset" onclick="reset()">
+    <script>
+        function reset(){
+            document.getElementById("form").reset();
+        }
+    </script>   
+</body>
+</html>
